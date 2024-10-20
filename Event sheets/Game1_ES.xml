@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game1_ES</name>
+    <events>
+        <variable constant="0" name="timer" sid="170000009457266" static="0" type="number">30</variable>
+        <variable constant="0" name="skorgame" sid="436323572478366" static="0" type="number">0</variable>
+        <event-block sid="203409673001459">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="538434121480137" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="209231130413977" type="spawner">
+                    <param id="0" name="Object">jenisSampah</param>
+                    <param id="1" name="Layer">&quot;Isigame&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="518280728303421" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="589083673028381">
+            <conditions>
+                <condition id="-18" name="On created" sid="508574372230858" type="jenisSampah" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="360672402351748" type="jenisSampah">
+                    <param id="0" name="Frame number">random(11)</param>
+                </action>
+                <action id="-10" name="Set value" sid="573193571742327" type="jenisSampah">
+                    <param id="0" name="Instance variable">posY</param>
+                    <param id="1" name="Value">Self.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="950929362523186">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="638366932179148" type="jenisSampah">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="704417611109887">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="992665512155432" type="jenisSampah">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Number">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="956733545609616" type="jenisSampah">
+                            <param id="0" name="Instance variable">jenisSampah</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="625072853199784">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="445676846536668" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="186351346979853" type="jenisSampah">
+                            <param id="0" name="Instance variable">jenisSampah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="876899445197498">
+            <conditions>
+                <condition id="-22" name="Else" sid="761286645309172" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="106648714098588" type="jenisSampah">
+                    <param id="0" name="Instance variable">jenisSampah</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="996678810795305">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="424934625859853" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="923714136464246" type="txSkorGame">
+                    <param id="0" name="Text">skorgame</param>
+                </action>
+                <action id="0" name="Set text" sid="639534861200430" type="txTimer">
+                    <param id="0" name="Text">timer</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="961636224553522" title="Drag and Drop">
+            <sub-events>
+                <event-block sid="773994781241277">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="289894523914186" type="jenisSampah" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="681226682638083">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="689900226267598" type="jenisSampah">
+                                    <param id="0" name="Object">boxsampah</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="619469913448453">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="775620243937413" type="jenisSampah">
+                                            <param id="0" name="Instance variable">jenisSampah</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">boxsampah.JenisTempat</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="718620489700748" type="jenisSampah" />
+                                        <action id="-10" name="Add to" sid="534394568016906" type="System">
+                                            <param id="0" name="Variable">skorgame</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="936291693458504">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="210386941177230" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="593568152822539" type="System">
+                                            <param id="0" name="Variable">skorgame</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="713496458273908" type="jenisSampah">
+                                            <param id="0" name="Y">Self.posY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="882703893160324">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="879916212280559" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="640937155662674" type="jenisSampah">
+                                    <param id="0" name="Y">Self.posY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="425683622675890" title="Game Over" />
+        <event-block sid="125012745192903">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="840633606567977" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="950311290375094" type="System">
+                    <param id="0" name="Layer">&quot;gameover&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="134801264186468">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="100146597037114" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="148613910127053" type="System">
+                    <param id="0" name="Layer">&quot;gameover&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="864358287827097" type="System">
+                    <param id="0" name="Layer">&quot;Isigame&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="858640954649389" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="849062454616175">
+            <conditions>
+                <condition id="17" name="On tap object" sid="164586823521487" type="Touch">
+                    <param id="0" name="Object">restart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="213446434106524" type="System">
+                    <param id="0" name="Layout">Game_LO</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="784410338638992" type="System">
+                    <param id="0" name="Layer">&quot;Isigame&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="111701484245885" type="System">
+                    <param id="0" name="Layer">&quot;gameover&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="598915440548332" type="System">
+                    <param id="0" name="Variable">skorgame</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="475933945232810" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">30</param>
+                </action>
+                <action id="0" name="Play" sid="440341982927086" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="399393452275596">
+            <conditions>
+                <condition id="17" name="On tap object" sid="917624459777681" type="Touch">
+                    <param id="0" name="Object">home2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="558636118089268" type="System">
+                    <param id="0" name="Layout">Menu_LO</param>
+                </action>
+                <action id="0" name="Play" sid="955371196795873" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

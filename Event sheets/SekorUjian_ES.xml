@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SekorUjian_ES</name>
+    <events>
+        <variable constant="0" name="skorUjian" sid="838299715017829" static="0" type="number">0</variable>
+        <event-block sid="571122930536857">
+            <conditions>
+                <condition id="17" name="On tap object" sid="864231819914226" type="Touch">
+                    <param id="0" name="Object">home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="415018134588729" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="803474438792372" type="System">
+                    <param id="0" name="Layout">Menu_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="630328810370309">
+            <conditions>
+                <condition id="17" name="On tap object" sid="849118654375743" type="Touch">
+                    <param id="0" name="Object">close</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="743630495789120" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="1" name="Close" sid="771718203683002" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="504619477732138">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="747637838145423" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="466663961408797" type="TotalSkor">
+                    <param id="0" name="Text">skorUjian</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="418085441566532">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="355124728671119" type="System">
+                    <param id="0" name="Variable">skorUjian</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">70</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="481392284089564" type="System">
+                    <param id="0" name="Layer">&quot;Lulus&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="631138513565337" type="System">
+                    <param id="0" name="Layer">&quot;Tidak Lulus&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521604307822403">
+            <conditions>
+                <condition id="-22" name="Else" sid="689801486276505" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="558240021498938" type="System">
+                    <param id="0" name="Layer">&quot;Lulus&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="908561486383359" type="System">
+                    <param id="0" name="Layer">&quot;Tidak Lulus&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

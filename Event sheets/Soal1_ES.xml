@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Soal1_ES</name>
+    <events>
+        <include>Global_ES</include>
+        <event-block sid="477582330226904">
+            <conditions>
+                <condition id="17" name="On tap object" sid="705717599181890" type="Touch">
+                    <param id="0" name="Object">1A</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="326173066897955" type="System">
+                    <param id="0" name="Layout">Soal2_LO</param>
+                </action>
+                <action id="-10" name="Add to" sid="556787044546634" type="System">
+                    <param id="0" name="Variable">skorUjian</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="709260405776549">
+            <conditions>
+                <condition id="17" name="On tap object" sid="516019503511316" type="Touch">
+                    <param id="0" name="Object">1B</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="953986927800475" type="System">
+                    <param id="0" name="Layout">Soal2_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="993818909880985">
+            <conditions>
+                <condition id="17" name="On tap object" sid="521206805116124" type="Touch">
+                    <param id="0" name="Object">1C</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="540608580059039" type="System">
+                    <param id="0" name="Layout">Soal2_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="876616631817753">
+            <conditions>
+                <condition id="17" name="On tap object" sid="843046556169082" type="Touch">
+                    <param id="0" name="Object">1D</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="216052959978284" type="System">
+                    <param id="0" name="Layout">Soal2_LO</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

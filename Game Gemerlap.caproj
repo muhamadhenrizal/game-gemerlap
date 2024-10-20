@@ -1,0 +1,986 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Game Gemerlap</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="video" version="1">Video</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bg" sid="849182125461876">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378868405645865" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\bgg.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgopening" sid="875635074160938">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598035724782794" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\baru\Frame 2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="judul" sid="209338543834397">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="423924445060031">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="749150257852127" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\baru\Frame 1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ayo" sid="667107517586703">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="187117281569363">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="273632444713769" speed="5">
+                    <frame duration="1" hotspotX="0.500747" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\baru\aa.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="belajar" sid="849867240101363">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="161801052703015">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="215188860786420" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\baru\belajar.png">
+                        <collision-poly>
+                            <point x="0.102911" y="0.192607" />
+                            <point x="0.5" y="0.00194553" />
+                            <point x="0.905405" y="0.177043" />
+                            <point x="0.99896" y="0.5" />
+                            <point x="0.913721" y="0.838521" />
+                            <point x="0.5" y="0.998055" />
+                            <point x="0.0810811" y="0.848249" />
+                            <point x="0.002079" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bermain" sid="554662716884220">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="539377592627517">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544515037374185" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\baru\bermain.png">
+                        <collision-poly>
+                            <point x="0.102911" y="0.192607" />
+                            <point x="0.5" y="0.00194553" />
+                            <point x="0.905405" y="0.177043" />
+                            <point x="0.99896" y="0.5" />
+                            <point x="0.913721" y="0.838521" />
+                            <point x="0.5" y="0.998055" />
+                            <point x="0.0810811" y="0.848249" />
+                            <point x="0.002079" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ujian" sid="744121610365836">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="561287844703189">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543182619163239" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\baru\ujian.png">
+                        <collision-poly>
+                            <point x="0.102911" y="0.192607" />
+                            <point x="0.5" y="0.00194553" />
+                            <point x="0.905405" y="0.177043" />
+                            <point x="0.99896" y="0.5" />
+                            <point x="0.913721" y="0.838521" />
+                            <point x="0.5" y="0.998055" />
+                            <point x="0.0810811" y="0.848249" />
+                            <point x="0.002079" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="materi" sid="437524653282177">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="553486201616111" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500152" original-source="D:\PROJECT OM DAN GECUN\assets\baru\materi sampah.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home" sid="278063592063480">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="271930166932221" speed="5">
+                    <frame duration="1" hotspotX="0.50073" hotspotY="0.50087" original-source="D:\PROJECT OM DAN GECUN\assets\home.png">
+                        <collision-poly>
+                            <point x="0.0715328" y="0.0852174" />
+                            <point x="0.49927" y="0.00695652" />
+                            <point x="0.915328" y="0.10087" />
+                            <point x="0.99708" y="0.49913" />
+                            <point x="0.906569" y="0.888696" />
+                            <point x="0.49927" y="0.996522" />
+                            <point x="0.0846715" y="0.89913" />
+                            <point x="0.00145985" y="0.49913" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="close" sid="963408721134104">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="731532395394397" speed="5">
+                    <frame duration="1" hotspotX="0.50073" hotspotY="0.50087" original-source="D:\PROJECT OM DAN GECUN\assets\close.png">
+                        <collision-poly>
+                            <point x="0.0715328" y="0.0852174" />
+                            <point x="0.49927" y="0.00695652" />
+                            <point x="0.915328" y="0.10087" />
+                            <point x="0.99708" y="0.49913" />
+                            <point x="0.906569" y="0.888696" />
+                            <point x="0.49927" y="0.996522" />
+                            <point x="0.0846715" y="0.89913" />
+                            <point x="0.00145985" y="0.49913" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="465198473801193">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Browser" sid="248437988264856">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="game" sid="978596667846113">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306362599743611" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\baru\gamee.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ujian2" sid="818615856150095">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="242623572256191" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\baru\ujian.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="close2" sid="176792912373108">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="726775656615183" speed="5">
+                    <frame duration="1" hotspotX="0.50073" hotspotY="0.50087" original-source="D:\PROJECT OM DAN GECUN\assets\close.png">
+                        <collision-poly>
+                            <point x="0.0715328" y="0.0852174" />
+                            <point x="0.49927" y="0.00695652" />
+                            <point x="0.915328" y="0.10087" />
+                            <point x="0.99708" y="0.49913" />
+                            <point x="0.906569" y="0.888696" />
+                            <point x="0.49927" y="0.996522" />
+                            <point x="0.0846715" y="0.89913" />
+                            <point x="0.00145985" y="0.49913" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="907296824372786">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Video" sid="734421246900853">
+            <plugin id="video" />
+        </object-type>
+        <object-type name="play" sid="720320780010259">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="556032504694101" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\play.png">
+                        <collision-poly>
+                            <point x="0.0708661" y="0.084375" />
+                            <point x="0.5" y="0.009375" />
+                            <point x="0.914698" y="0.101563" />
+                            <point x="0.996063" y="0.5" />
+                            <point x="0.906824" y="0.889063" />
+                            <point x="0.5" y="0.996875" />
+                            <point x="0.0839895" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pause" sid="236625125276538">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="169992914050121" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\pause.png">
+                        <collision-poly>
+                            <point x="0.0708661" y="0.084375" />
+                            <point x="0.5" y="0.009375" />
+                            <point x="0.914698" y="0.101563" />
+                            <point x="0.996063" y="0.5" />
+                            <point x="0.906824" y="0.889063" />
+                            <point x="0.5" y="0.996875" />
+                            <point x="0.0839895" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="soalno" sid="907212164857992">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155697347412158" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500568" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\soalno1.png">
+                        <collision-poly>
+                            <point x="0.0457163" y="0.144154" />
+                            <point x="0.5" y="0.00113507" />
+                            <point x="0.958603" y="0.130533" />
+                            <point x="0.993161" y="0.499432" />
+                            <point x="0.942765" y="0.819523" />
+                            <point x="0.5" y="0.99773" />
+                            <point x="0.0521958" y="0.835414" />
+                            <point x="0.000359971" y="0.499432" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="soalno2" sid="441007984574940">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818820913806271" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500568" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\soalno2.png">
+                        <collision-poly>
+                            <point x="0.0457163" y="0.144154" />
+                            <point x="0.5" y="0.00113507" />
+                            <point x="0.958603" y="0.130533" />
+                            <point x="0.993161" y="0.499432" />
+                            <point x="0.942765" y="0.819523" />
+                            <point x="0.5" y="0.99773" />
+                            <point x="0.0521958" y="0.835414" />
+                            <point x="0.000359971" y="0.499432" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="soalno3" sid="919471984252522">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="516985784870418" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500568" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\soalno3.png">
+                        <collision-poly>
+                            <point x="0.0457163" y="0.144154" />
+                            <point x="0.5" y="0.00113507" />
+                            <point x="0.958603" y="0.130533" />
+                            <point x="0.993161" y="0.499432" />
+                            <point x="0.942765" y="0.819523" />
+                            <point x="0.5" y="0.99773" />
+                            <point x="0.0521958" y="0.835414" />
+                            <point x="0.000359971" y="0.499432" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="soalno4" sid="574115505993040">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="936838375017619" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500568" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\soalno4.png">
+                        <collision-poly>
+                            <point x="0.0457163" y="0.144154" />
+                            <point x="0.5" y="0.00113507" />
+                            <point x="0.958603" y="0.130533" />
+                            <point x="0.993161" y="0.499432" />
+                            <point x="0.942765" y="0.819523" />
+                            <point x="0.5" y="0.99773" />
+                            <point x="0.0521958" y="0.835414" />
+                            <point x="0.000359971" y="0.499432" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="soalno5" sid="400545059992063">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="886421183264997" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500568" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\soalno5.png">
+                        <collision-poly>
+                            <point x="0.0457163" y="0.144154" />
+                            <point x="0.5" y="0.00113507" />
+                            <point x="0.958603" y="0.130533" />
+                            <point x="0.993161" y="0.499432" />
+                            <point x="0.942765" y="0.819523" />
+                            <point x="0.5" y="0.99773" />
+                            <point x="0.0521958" y="0.835414" />
+                            <point x="0.000359971" y="0.499432" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jawabanA" sid="429930456214208">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439217264595614" speed="5">
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.501529" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\jawabanA.png">
+                        <collision-poly>
+                            <point x="0.0380091" y="0.12844" />
+                            <point x="0.499548" y="0.00917431" />
+                            <point x="0.956561" y="0.146789" />
+                            <point x="0.99638" y="0.498471" />
+                            <point x="0.945701" y="0.816514" />
+                            <point x="0.499548" y="0.993884" />
+                            <point x="0.0470588" y="0.840979" />
+                            <point x="0.000904977" y="0.498471" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jawabanB" sid="132462249594428">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="951581239105447" speed="5">
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.501529" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\jawabanB.png">
+                        <collision-poly>
+                            <point x="0.0380091" y="0.12844" />
+                            <point x="0.499548" y="0.00917431" />
+                            <point x="0.956561" y="0.146789" />
+                            <point x="0.99638" y="0.498471" />
+                            <point x="0.945701" y="0.816514" />
+                            <point x="0.499548" y="0.993884" />
+                            <point x="0.0470588" y="0.840979" />
+                            <point x="0.000904977" y="0.498471" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jawabanC" sid="833281300569116">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544443762691896" speed="5">
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.501529" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\jawabanC.png">
+                        <collision-poly>
+                            <point x="0.0380091" y="0.12844" />
+                            <point x="0.499548" y="0.00917431" />
+                            <point x="0.956561" y="0.146789" />
+                            <point x="0.99638" y="0.498471" />
+                            <point x="0.945701" y="0.816514" />
+                            <point x="0.499548" y="0.993884" />
+                            <point x="0.0470588" y="0.840979" />
+                            <point x="0.000904977" y="0.498471" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jawabanD" sid="250802106884137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="951135486389120" speed="5">
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.501529" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\jawabanD.png">
+                        <collision-poly>
+                            <point x="0.0380091" y="0.12844" />
+                            <point x="0.499548" y="0.00917431" />
+                            <point x="0.956561" y="0.146789" />
+                            <point x="0.99638" y="0.498471" />
+                            <point x="0.945701" y="0.816514" />
+                            <point x="0.499548" y="0.993884" />
+                            <point x="0.0470588" y="0.840979" />
+                            <point x="0.000904977" y="0.498471" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="1A" sid="674798915372772">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="907244047494858" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="1B" sid="300225045140817">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="418829876490278" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="1C" sid="134863488593074">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="987395549574362" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="1D" sid="563035561138828">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="919976156662106" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="2A" sid="428577938459275">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="886814675108602" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="2B" sid="390906451646092">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431647309592380" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="2C" sid="577410746561279">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="711216176170953" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="2D" sid="744415043146871">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346036565874727" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="3A" sid="816253414683722">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="124682252144437" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="3B" sid="210171481762185">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228059092735057" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="3C" sid="336218881963034">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="541755872463936" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="3D" sid="795519496903749">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="532391975673562" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="4A" sid="168225018077080">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261579547080994" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="4B" sid="286566360255452">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="773284552162473" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="4C" sid="420406412591963">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="344104789898859" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="4D" sid="221529177956108">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924199879351168" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="5A" sid="491370313298642">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969633168515410" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="5B" sid="992359351901609">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="454723458066897" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="5C" sid="544626396034778">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814879494325688" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="5D" sid="540779876029250">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762909543431170" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="belajar2" sid="475653832048081">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="760397625880700" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\belajar.png">
+                        <collision-poly>
+                            <point x="0.103009" y="0.192641" />
+                            <point x="0.5" y="0" />
+                            <point x="0.90625" y="0.175325" />
+                            <point x="1" y="0.5" />
+                            <point x="0.913194" y="0.837662" />
+                            <point x="0.5" y="0.997836" />
+                            <point x="0.0810185" y="0.848485" />
+                            <point x="0.00115741" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TxSkor" sid="158176594620239">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TotalSkor" sid="382959381149172">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="lulus" sid="778022468224531">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172210330677765" speed="5">
+                    <frame duration="1" hotspotX="0.500351" hotspotY="0.501718" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\lulus.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="744691516272329">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="ujian3" sid="394724030803326">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518234941404854" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501188" original-source="D:\PROJECT OM DAN GECUN\assets\ujian2.png">
+                        <collision-poly>
+                            <point x="0.108219" y="0.187648" />
+                            <point x="0.5" y="0" />
+                            <point x="0.90274" y="0.168646" />
+                            <point x="1" y="0.498812" />
+                            <point x="0.909589" y="0.84323" />
+                            <point x="0.5" y="0.997625" />
+                            <point x="0.0849315" y="0.852732" />
+                            <point x="0.00136986" y="0.498812" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kalah" sid="199647350936910">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="358322881906028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501597" original-source="D:\PROJECT OM DAN GECUN\assets\SOAL\kalah.png">
+                        <collision-poly>
+                            <point x="0.0623306" y="0.29393" />
+                            <point x="0.5" y="0.111821" />
+                            <point x="0.903117" y="0.456869" />
+                            <point x="0.960705" y="0.498403" />
+                            <point x="0.96206" y="0.821086" />
+                            <point x="0.5" y="0.916933" />
+                            <point x="0.0372629" y="0.824281" />
+                            <point x="0.0155827" y="0.498403" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game2" sid="965263096007504">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151312372322058" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\game.png">
+                        <collision-poly>
+                            <point x="0.103239" y="0.193182" />
+                            <point x="0.5" y="0" />
+                            <point x="0.90587" y="0.176136" />
+                            <point x="1" y="0.5" />
+                            <point x="0.912955" y="0.837121" />
+                            <point x="0.5" y="0.998106" />
+                            <point x="0.0809717" y="0.848485" />
+                            <point x="0.00101215" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bggame" sid="183100589228391">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400652773530899" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500124" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\bggame.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="boxsampah" sid="510404543635637">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="JenisTempat" sid="331698149604393" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="471816776816002" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500692" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\anorganik.png">
+                        <collision-poly>
+                            <point x="0.137615" y="0.0829876" />
+                            <point x="0.5" y="0" />
+                            <point x="0.876147" y="0.0746888" />
+                            <point x="0.949541" y="0.969571" />
+                            <point x="0.5" y="0.954357" />
+                            <point x="0.059633" y="0.964039" />
+                            <point x="0.114679" y="0.499308" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500694" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\organik.png">
+                        <collision-poly>
+                            <point x="0.138249" y="0.0832178" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875576" y="0.074896" />
+                            <point x="0.949309" y="0.969487" />
+                            <point x="0.5" y="0.952843" />
+                            <point x="0.0599078" y="0.963939" />
+                            <point x="0.115207" y="0.499307" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500694" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\b3.png">
+                        <collision-poly>
+                            <point x="0.135945" y="0.0818308" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875576" y="0.074896" />
+                            <point x="0.949309" y="0.969487" />
+                            <point x="0.5" y="0.952843" />
+                            <point x="0.0599078" y="0.963939" />
+                            <point x="0.115207" y="0.499307" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jenisSampah" sid="794738979039490">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="posY" sid="595199159189757" type="number" />
+                <instance-variable name="jenisSampah" sid="818835786713671" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="637234632369182">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DragDrop" sid="335301547295452">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="12" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="971198756544554" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\anorganik1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\anorganik2.png" />
+                    <frame duration="1" hotspotX="0.501094" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\anorganik3.png" />
+                    <frame duration="1" hotspotX="0.500998" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\anorganik4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501272" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\organik1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\organik2.png" />
+                    <frame duration="1" hotspotX="0.500956" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\organik3.png" />
+                    <frame duration="1" hotspotX="0.50078" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\organik4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\b31.png" />
+                    <frame duration="1" hotspotX="0.501211" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\b32.png" />
+                    <frame duration="1" hotspotX="0.501319" hotspotY="0.500835" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\b33.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\b34.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spawner" sid="159176603475380">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282017855133148" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\bgopening lama.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jam" sid="382058763110209">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="360299180385918" speed="5">
+                    <frame duration="1" hotspotX="0.500956" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\jam.png">
+                        <collision-poly>
+                            <point x="0.240918" y="0.208609" />
+                            <point x="0.499044" y="0" />
+                            <point x="0.75717" y="0.210265" />
+                            <point x="0.992352" y="0.5" />
+                            <point x="0.852772" y="0.872517" />
+                            <point x="0.499044" y="0.998344" />
+                            <point x="0.145315" y="0.874172" />
+                            <point x="0.00764818" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txTimer" sid="680897120297237">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="belajar3" sid="262196491928337">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="850895186603166" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\belajar.png">
+                        <collision-poly>
+                            <point x="0.103009" y="0.192641" />
+                            <point x="0.5" y="0" />
+                            <point x="0.90625" y="0.175325" />
+                            <point x="1" y="0.5" />
+                            <point x="0.913194" y="0.837662" />
+                            <point x="0.5" y="0.997836" />
+                            <point x="0.0810185" y="0.848485" />
+                            <point x="0.00115741" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txSkorGame" sid="865399131587509">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="gameover" sid="507822547097863">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="548721095234837" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\gameover.png">
+                        <collision-poly>
+                            <point x="0.0857923" y="0.0969136" />
+                            <point x="0.5" y="0" />
+                            <point x="0.915847" y="0.0950617" />
+                            <point x="1" y="0.5" />
+                            <point x="0.914208" y="0.903086" />
+                            <point x="0.5" y="0.998765" />
+                            <point x="0.0808743" y="0.908642" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home2" sid="159994972385647">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="578952024668029" speed="5">
+                    <frame duration="1" hotspotX="0.50073" hotspotY="0.50087" original-source="D:\PROJECT OM DAN GECUN\assets\home.png">
+                        <collision-poly>
+                            <point x="0.0715328" y="0.0852174" />
+                            <point x="0.49927" y="0.00695652" />
+                            <point x="0.915328" y="0.10087" />
+                            <point x="0.99708" y="0.49913" />
+                            <point x="0.906569" y="0.888696" />
+                            <point x="0.49927" y="0.996522" />
+                            <point x="0.0846715" y="0.89913" />
+                            <point x="0.00145985" y="0.49913" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="restart" sid="221079931566760">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582333524074969" speed="5">
+                    <frame duration="1" hotspotX="0.500852" hotspotY="0.5" original-source="D:\PROJECT OM DAN GECUN\assets\GAME\restart.png">
+                        <collision-poly>
+                            <point x="0.0715503" y="0.0853659" />
+                            <point x="0.499148" y="0.00813008" />
+                            <point x="0.914821" y="0.101626" />
+                            <point x="0.996593" y="0.5" />
+                            <point x="0.906303" y="0.888211" />
+                            <point x="0.499148" y="0.997967" />
+                            <point x="0.0851789" y="0.898374" />
+                            <point x="0.00170358" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout-folder name="Ujian">
+            <layout>Ujian_LO.xml</layout>
+            <layout>Soal1_LO.xml</layout>
+            <layout>Soal2_LO.xml</layout>
+            <layout>Soal3_LO.xml</layout>
+            <layout>Soal4_LO.xml</layout>
+            <layout>Soal5_LO.xml</layout>
+            <layout>SekorUjian_LO.xml</layout>
+        </layout-folder>
+        <layout>Menu_LO.xml</layout>
+        <layout>Materi1_LO.xml</layout>
+        <layout>Game_LO.xml</layout>
+        <layout>Game1_LO.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-folder name="Ujian">
+            <event-sheet>Ujian_ES.xml</event-sheet>
+            <event-sheet>Soal1_ES.xml</event-sheet>
+            <event-sheet>Soal2_ES.xml</event-sheet>
+            <event-sheet>Soal3_ES.xml</event-sheet>
+            <event-sheet>Soal4_ES.xml</event-sheet>
+            <event-sheet>Soal5_ES.xml</event-sheet>
+            <event-sheet>SekorUjian_ES.xml</event-sheet>
+        </event-folder>
+        <event-sheet>Menu_ES.xml</event-sheet>
+        <event-sheet>Materi1_ES.xml</event-sheet>
+        <event-sheet>Game_ES.xml</event-sheet>
+        <event-sheet>Global_ES.xml</event-sheet>
+        <event-sheet>Game1_ES.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="10">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="11" />
+        <global-instance type="Audio" uid="19">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="80" />
+    </global-instances>
+    <sounds-folder>
+        <file name="click.m4a" />
+        <file name="click (1).ogg" />
+        <file name="backsoundgame.ogg" />
+        <file name="Game.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="milahsampahku.webm" />
+    </files-folder>
+</c2project>

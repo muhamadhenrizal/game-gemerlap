@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu_ES</name>
+    <events>
+        <variable constant="0" name="musicPlaying" sid="205303705710283" static="0" type="number">0</variable>
+        <variable constant="0" name="timeropening" sid="773489180855630" static="0" type="number">0</variable>
+        <event-block sid="995469274315309">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="102979160488578" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="679915897579836" type="System">
+                    <param id="0" name="Layer">&quot;Opening&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="503746362131457" type="System">
+                    <param id="0" name="Layer">&quot;ObjMenu&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="453670721283903" type="System">
+                    <param id="0" name="Layer">&quot;BGMenu&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="456617519883535">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="321467215616159" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="791816991942895" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="0" name="Play" sid="938920293867832" type="Audio">
+                    <param id="0" name="Audio file">Game</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;menuMusic&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="734490393955683" type="System">
+                    <param id="0" name="Variable">musicPlaying</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="795682908634881">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="941345579866445" type="System">
+                            <param id="0" name="Variable">musicPlaying</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="579783203080932">
+            <conditions>
+                <condition behavior="LiteTween" id="4" name="On tween end" sid="737348889456504" type="judul" />
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="930110977060563" type="judul">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="14" name="Stop" sid="113841088961938" type="judul">
+                    <param id="0" name="Stop Mode">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="888328023513085">
+            <conditions>
+                <condition id="17" name="On tap object" sid="753440584928255" type="Touch">
+                    <param id="0" name="Object">close2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="547643091064280" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="1" name="Close" sid="224825176705428" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="287011137367854">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="938127195258232" type="System">
+                    <param id="0" name="Interval (seconds)">2.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="739869467656398" type="System">
+                    <param id="0" name="Variable">timeropening</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="506495221160409">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="540059806909644" type="System">
+                    <param id="0" name="Variable">timeropening</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="302164988361894" type="System">
+                    <param id="0" name="Layer">&quot;Opening&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="217243522569897" type="System">
+                    <param id="0" name="Layer">&quot;ObjMenu&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="659522105429703" type="System">
+                    <param id="0" name="Layer">&quot;BGMenu&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="599388557432350">
+            <conditions>
+                <condition id="17" name="On tap object" sid="320217324520686" type="Touch">
+                    <param id="0" name="Object">belajar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="111406822552282" type="Audio">
+                    <param id="0" name="Tag">&quot;menuMusic&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="884483620003676" type="System">
+                    <param id="0" name="Variable">musicPlaying</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="809526911254152" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="905396777446827" type="System">
+                    <param id="0" name="Layout">Materi1_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="301134792993532">
+            <conditions>
+                <condition id="17" name="On tap object" sid="539527319126525" type="Touch">
+                    <param id="0" name="Object">bermain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="403046094633800" type="System">
+                    <param id="0" name="Layout">Game_LO</param>
+                </action>
+                <action id="0" name="Play" sid="491312094378992" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="686777770706687">
+            <conditions>
+                <condition id="17" name="On tap object" sid="543939461258806" type="Touch">
+                    <param id="0" name="Object">ujian</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="969819937323103" type="System">
+                    <param id="0" name="Layout">Ujian_LO</param>
+                </action>
+                <action id="0" name="Play" sid="629167429744719" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

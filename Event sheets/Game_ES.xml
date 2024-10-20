@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game_ES</name>
+    <events>
+        <event-block sid="746102557082331">
+            <conditions>
+                <condition id="17" name="On tap object" sid="223591352896157" type="Touch">
+                    <param id="0" name="Object">home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="862038332600550" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="558301855632242" type="System">
+                    <param id="0" name="Layout">Menu_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="110608631001795">
+            <conditions>
+                <condition id="17" name="On tap object" sid="271369691749063" type="Touch">
+                    <param id="0" name="Object">close</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="310612242000038" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="1" name="Close" sid="585301713905689" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="576962927167141">
+            <conditions>
+                <condition id="17" name="On tap object" sid="784859001775260" type="Touch">
+                    <param id="0" name="Object">game2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="190487164883611" type="Audio">
+                    <param id="0" name="Audio file">click (1)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="126417874274503" type="System">
+                    <param id="0" name="Layout">Game1_LO</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

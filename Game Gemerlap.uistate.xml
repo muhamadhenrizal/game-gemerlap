@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Soal1_LO</layout>
+        <layout order="2">Soal2_LO</layout>
+        <layout order="4">Soal3_LO</layout>
+        <layout order="6">Soal4_LO</layout>
+        <layout order="8">Soal5_LO</layout>
+        <layout order="10">SekorUjian_LO</layout>
+        <layout order="12">Menu_LO</layout>
+        <layout order="14">Game_LO</layout>
+        <layout order="16">Materi1_LO</layout>
+        <layout order="20">Ujian_LO</layout>
+        <layout order="21">Game1_LO</layout>
+        <event-sheet order="1">Soal1_ES</event-sheet>
+        <event-sheet order="3">Soal2_ES</event-sheet>
+        <event-sheet order="5">Soal3_ES</event-sheet>
+        <event-sheet order="7">Soal4_ES</event-sheet>
+        <event-sheet order="9">Soal5_ES</event-sheet>
+        <event-sheet order="11">SekorUjian_ES</event-sheet>
+        <event-sheet order="13">Global_ES</event-sheet>
+        <event-sheet active="1" order="15">Menu_ES</event-sheet>
+        <event-sheet order="17">Materi1_ES</event-sheet>
+        <event-sheet order="18">Game_ES</event-sheet>
+        <event-sheet order="19">Ujian_ES</event-sheet>
+        <event-sheet order="22">Game1_ES</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="layout-folder/Ujian/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/Ujian/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/bg/" />
+        <folder expanded="1" path="animation-folder/bgopening/" />
+        <folder expanded="1" path="animation-folder/judul/" />
+        <folder expanded="1" path="animation-folder/ayo/" />
+        <folder expanded="1" path="animation-folder/belajar/" />
+        <folder expanded="1" path="animation-folder/bermain/" />
+        <folder expanded="1" path="animation-folder/ujian/" />
+        <folder expanded="1" path="animation-folder/materi/" />
+        <folder expanded="1" path="animation-folder/home/" />
+        <folder expanded="1" path="animation-folder/close/" />
+        <folder expanded="1" path="animation-folder/game/" />
+        <folder expanded="1" path="animation-folder/ujian2/" />
+        <folder expanded="1" path="animation-folder/close2/" />
+        <folder expanded="1" path="animation-folder/play/" />
+        <folder expanded="1" path="animation-folder/pause/" />
+        <folder expanded="1" path="animation-folder/soalno/" />
+        <folder expanded="1" path="animation-folder/soalno2/" />
+        <folder expanded="1" path="animation-folder/soalno3/" />
+        <folder expanded="1" path="animation-folder/soalno4/" />
+        <folder expanded="1" path="animation-folder/soalno5/" />
+        <folder expanded="1" path="animation-folder/jawabanA/" />
+        <folder expanded="1" path="animation-folder/jawabanB/" />
+        <folder expanded="1" path="animation-folder/jawabanC/" />
+        <folder expanded="1" path="animation-folder/jawabanD/" />
+        <folder expanded="1" path="animation-folder/1A/" />
+        <folder expanded="1" path="animation-folder/1B/" />
+        <folder expanded="1" path="animation-folder/1C/" />
+        <folder expanded="1" path="animation-folder/1D/" />
+        <folder expanded="1" path="animation-folder/2A/" />
+        <folder expanded="1" path="animation-folder/2B/" />
+        <folder expanded="1" path="animation-folder/2C/" />
+        <folder expanded="1" path="animation-folder/2D/" />
+        <folder expanded="1" path="animation-folder/3A/" />
+        <folder expanded="1" path="animation-folder/3B/" />
+        <folder expanded="1" path="animation-folder/3C/" />
+        <folder expanded="1" path="animation-folder/3D/" />
+        <folder expanded="1" path="animation-folder/4A/" />
+        <folder expanded="1" path="animation-folder/4B/" />
+        <folder expanded="1" path="animation-folder/4C/" />
+        <folder expanded="1" path="animation-folder/4D/" />
+        <folder expanded="1" path="animation-folder/5A/" />
+        <folder expanded="1" path="animation-folder/5B/" />
+        <folder expanded="1" path="animation-folder/5C/" />
+        <folder expanded="1" path="animation-folder/5D/" />
+        <folder expanded="1" path="animation-folder/belajar2/" />
+        <folder expanded="1" path="animation-folder/lulus/" />
+        <folder expanded="1" path="animation-folder/ujian3/" />
+        <folder expanded="1" path="animation-folder/kalah/" />
+        <folder expanded="1" path="animation-folder/game2/" />
+        <folder expanded="1" path="animation-folder/bggame/" />
+        <folder expanded="1" path="animation-folder/boxsampah/" />
+        <folder expanded="1" path="animation-folder/jenisSampah/" />
+        <folder expanded="1" path="animation-folder/spawner/" />
+        <folder expanded="1" path="animation-folder/jam/" />
+        <folder expanded="1" path="animation-folder/belajar3/" />
+        <folder expanded="1" path="animation-folder/gameover/" />
+        <folder expanded="1" path="animation-folder/home2/" />
+        <folder expanded="1" path="animation-folder/restart/" />
+    </folders-expanded>
+</c2uistate>

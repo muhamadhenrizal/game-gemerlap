@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Global_ES</name>
+    <events>
+        <event-block sid="224424808301008">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="260802661749386" type="Mouse">
+                    <param id="0" name="Object">jawabanA</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="960590308243983" type="jawabanA">
+                    <param id="0" name="Width">289.201</param>
+                    <param id="1" name="Height">85.582</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="727179584816017">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="494366162093085" type="Mouse">
+                    <param id="0" name="Object">jawabanA</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="414930247721543" type="jawabanA">
+                    <param id="0" name="Width">246.041</param>
+                    <param id="1" name="Height">72.81</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="322686379681065">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="551244894250090" type="Mouse">
+                    <param id="0" name="Object">jawabanB</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="185081146571391" type="jawabanB">
+                    <param id="0" name="Width">289.201</param>
+                    <param id="1" name="Height">85.582</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="608952094833071">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="135544655177793" type="Mouse">
+                    <param id="0" name="Object">jawabanB</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="496886726762855" type="jawabanB">
+                    <param id="0" name="Width">246.041</param>
+                    <param id="1" name="Height">72.81</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="298362441358776">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="176498517896684" type="Mouse">
+                    <param id="0" name="Object">jawabanC</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="314205907554418" type="jawabanC">
+                    <param id="0" name="Width">289.201</param>
+                    <param id="1" name="Height">85.582</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="738353701254734">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="908653259605882" type="Mouse">
+                    <param id="0" name="Object">jawabanC</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="983917680349551" type="jawabanC">
+                    <param id="0" name="Width">246.041</param>
+                    <param id="1" name="Height">72.81</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="636041229678941">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="122624288759277" type="Mouse">
+                    <param id="0" name="Object">jawabanD</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="384615570426022" type="jawabanD">
+                    <param id="0" name="Width">289.201</param>
+                    <param id="1" name="Height">85.582</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="423915436974221">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="999899208664513" type="Mouse">
+                    <param id="0" name="Object">jawabanD</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="912020743219158" type="jawabanD">
+                    <param id="0" name="Width">246.041</param>
+                    <param id="1" name="Height">72.81</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
